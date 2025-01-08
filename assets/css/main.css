@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html, 
+  body {
+    @apply h-full w-full bg-[#ededed] scroll-smooth
+  }
+}
+
+@layer utilities {
+  .trans {
+    @apply transition-all ease-in-out duration-300
+  }
+}
