@@ -5,7 +5,7 @@
 @layer base {
   html, 
   body {
-    @apply h-full w-full bg-[#ededed] scroll-smooth
+    @apply h-full w-full bg-white scroll-smooth
   }
 }
 
