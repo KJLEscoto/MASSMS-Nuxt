@@ -1,14 +1,16 @@
 <template>
   <div class="h-full w-full">
     <div
-      class="h-screen bg-[url('~/assets/img/main-background.svg')] object-center bg-cover bg-no-repeat relative px-52 p-4 overflow-hidden">
+      class="h-screen bg-[url('~/assets/img/main-background.svg')] object-center bg-cover bg-no-repeat relative px-5 xl:px-52 p-4 overflow-hidden">
 
       <nav class="flex justify-between items-center">
         <div>
           <img draggable="false" class=" w-36 h-auto" src="~/assets/img/masmss.svg">
         </div>
 
-        <ul class="flex gap-10 text-gray-400 mt-5 *:cursor-pointer">
+        <img class="w-[50px] h-auto xl:hidden block mt-5" src="~/assets/img/menu.jpg" />
+
+        <ul class="hidden xl:flex gap-10 text-gray-400 mt-5 *:cursor-pointer">
           <li class="text-yellow-300">Home</li>
           <li>Solutions</li>
           <li>Pricing</li>
@@ -16,7 +18,7 @@
           <li>Blog</li>
         </ul>
 
-        <div class="flex gap-5 items-center mt-5">
+        <div class="hidden xl:flex gap-5 items-center mt-5">
           <button
             class="px-10 py-2 text-gray-400 font-bold border-2 border-gray-400 rounded-full hover:text-black hover:bg-yellow-300 trans">Login</button>
           <button
@@ -70,37 +72,39 @@
 
       <div class="relative">
         <img draggable="false" class="absolute w-auto h-auto -left-[50%] z-10" src="~/assets/img/blue-circle.svg">
-        <div class="pt-20 xl:grid-cols-3 grid grid-cols-1 justify-center items-center gap-12 h-full relative z-20">
-          <section class="w-1/2 xl:w-auto space-y-5 h-full">
+        <div class="pt-20 flex xl:flex-row flex-col items-center w-full gap-x-12 gap-y-24 h-full relative z-20">
+          <section class="w-1/2 xl:w-full space-y-5 h-auto">
             <h1 class="font-extrabold text-sm"><span class="text-sky-500">#1:</span> Install App</h1>
-            <div class="p-5 rounded-xl bg-[#fcfcfc text-gray-500 shadow-md relative grid grid-cols-2 h-full ">
-              <p class="my-auto">Scan a QR code and instantly install the mobile app on your android device.</p>
+            <div class="p-5 rounded-xl bg-[#fcfcfc text-gray-500 shadow-md relative">
+              <p class="text-sm">Scan a QR code and <br> instantly install the <br> mobile app on your <br> android
+                device.</p>
               <img draggable="false" class="h-auto w-52 absolute -right-[30px] -top-[40px] float-right"
                 src="~/assets/img/install-app.svg" />
               <img draggable="false" class="h-auto w-3 opacity-30 absolute -right-[32px] top-[50%] xl:block hidden"
                 src="~/assets/img/d-r-arrow.png">
             </div>
           </section>
-          <section class="w-1/2 xl:w-auto space-y-5 h-full">
+          <section class="w-1/2 xl:w-full space-y-5">
             <h1 class="font-extrabold text-sm"><span class="text-sky-500">#2:</span> Import Contacts</h1>
-            <div class="p-5 rounded-xl bg-[#fcfcfc] text-gray-500 shadow-md relative grid grid-cols-2 h-full ">
-              <p class="my-auto">Upload any csv file with your contacts and you're all set!</p>
-              <img draggable="false" class="h-auto w-[300px] absolute float-right -right-[80px] -top-[10px]"
+            <div class="px-5 rounded-xl bg-[#fcfcfc] text-gray-500 shadow-md relative pt-5 pb-10">
+              <p class="text-sm">Upload any csv file with your <br> contacts and <br> you're all set!</p>
+              <img draggable="false" class="h-auto w-[300px] absolute float-right -right-[30px] -top-[10px]"
                 src="~/assets/img/import-contact.svg" />
               <img draggable="false" class="h-auto w-3 opacity-30 absolute -right-[32px] top-[50%] xl:block hidden"
                 src="~/assets/img/d-r-arrow.png">
             </div>
           </section>
-          <section class="w-1/2 xl:w-auto space-y-5 h-full">
+          <section class="w-1/2 xl:w-full space-y-5 h-auto">
             <h1 class="font-extrabold text-sm"><span class="text-sky-500">#3:</span> Schedule SMS</h1>
-            <div class="p-5 rounded-xl bg-[#fcfcfc] text-gray-500 shadow-md relative grid grid-cols-2 h-full ">
-              <p class="my-auto">Formulate your message, choose a contacts group, and schedule your campaign.</p>
+            <div class="p-5 rounded-xl bg-[#fcfcfc] text-gray-500 shadow-md relative">
+              <p class="text-sm">Formulate your message, <br> choose a contacts <br> group, and schedule <br> your
+                campaign.</p>
               <img draggable="false" class="h-auto w-[200px] absolute float-right -right-[0px] -top-[40px]"
                 src="~/assets/img/schedule-sms.svg" />
             </div>
           </section>
         </div>
-        <div class="grid grid-cols-2 mt-32 h-full gap-10">
+        <div class="xl:grid xl:grid-cols-2 flex flex-col-reverse mt-32 h-full gap-10">
           <img draggable="false" class="w-[500px] h-auto z-30" src="~/assets/img/creative-women.png" />
 
           <div class="my-auto space-y-5">
@@ -140,12 +144,57 @@
       </div>
     </div>
 
-    <div class="h-screen">
+    <div class="xl:h-screen h-full w-full">
+      <div class="w-full h-[70%] relative flex items-center justify-center">
+        <div class="z-50 flex items-center justify-center flex-col gap-5 text-center pt-20">
+          <img class="w-40 h-auto" src="~/assets/img/robust-robot-icon.svg" />
+          <p class="text-3xl font-black">Robust, Comprehensive, <br>
+            <span class="text-sky-400">Fully-Documented</span> API
+          </p>
+          <div>
+            <p class="text-xl text-sky-400">Seamlessly connect your CRM, ERPs, marketing platforms, <br>
+              and most popular business management and marketing systems.</p>
+            <p class="text-xl text-gray-400">(Our extensive API was designed with simplicity in mind, while encompassing
+              <br>
+              enough features to allow for usage versatility from a variety of users.)
+            </p>
+          </div>
+        </div>
+        <img class="absolute top-14 z-10" src="~/assets/img/blue-circle.svg">
+        <img class="h-auto w-[150px] absolute right-0 top-0 z-20" src="~/assets/img/decor-right.png">
+        <img class="h-auto w-[200px] absolute left-0 bottom-0 z-20" src="~/assets/img/decor-left.png">
+      </div>
 
+      <!-- display all the starItems -->
+      <div class="w-full h-[30%] relative z-50 xl:px-52 px-0 xl:py-0 py-10 xl:grid xl:grid-cols-3 flex flex-col items-center">
+        <section v-for="(items, rowIndex) in starItems" :key="rowIndex">
+          <div v-for="(item, itemIndex) in items" :key="itemIndex" class="flex gap-3 space-y-2">
+            <img class="h-auto w-5" src="~/assets/img/star.svg" alt="Star Icon">
+            <p class="text-lg text-gray-400">{{ item }}</p>
+          </div>
+        </section>
+      </div>
     </div>
   </div>
 </template>
 
 <script setup>
 
+const starItems = [
+  [     
+    'OTP authentication',
+    'Cart abandonment funnels',
+    'eCommerce autoresponders',
+  ],
+  [
+    'Seasonal promotions',
+    'Two-factor authentication',
+    'Integrate SMS into your apps',
+  ],
+  [
+    'Sync contacts from your CRM',
+    'Create complex chat bots',
+    'And more... !'
+  ] 
+]
 </script>
