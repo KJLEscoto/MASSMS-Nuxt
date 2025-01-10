@@ -4,11 +4,9 @@
       class="h-screen bg-[url('~/assets/img/main-background.svg')] object-center bg-cover bg-no-repeat relative px-5 xl:px-52 p-4 overflow-hidden">
 
       <nav class="flex justify-between items-center">
-        <div>
-          <img draggable="false" class=" w-36 h-auto" src="~/assets/img/masmss.svg">
-        </div>
+        <img draggable="false" class="xl:w-36 w-24 h-auto" src="~/assets/img/masmss.svg">
 
-        <img class="w-[50px] h-auto xl:hidden block mt-5" src="~/assets/img/menu.jpg" />
+        <img class="w-[50px] h-auto xl:hidden block mt-5 opacity-70 hover:opacity-100 cursor-pointer trans" src="~/assets/img/menu.jpg" />
 
         <ul class="hidden xl:flex gap-10 text-gray-400 mt-5 *:cursor-pointer">
           <li class="text-yellow-300">Home</li>
@@ -27,10 +25,11 @@
         </div>
       </nav>
 
-      <section class="grid grid-cols-2 mt-36">
-        <div>
-          <h1 class="text-7xl font-black text-white">Unlimited <br> Bulk SMS</h1>
-          <p class="text-lg text-white ml-1 mt-3">Massms is a fully-featured SMS & mobile marketing platform that
+      <section class="grid xl:grid-cols-2 grid-cols-1 xl:mt-36 mt-20 w-full">
+        <div class="flex flex-col w-full justify-center items-center text-center">
+          <h1 class="xl:text-7xl text-5xl font-black text-white">Unlimited <br> Bulk SMS</h1>
+          <p class="xl:text-lg text-base text-white xl:ml-1 mt-3">Massms is a fully-featured SMS & mobile marketing
+            platform that
             doesn't stop you from scaling.</p>
 
           <div class="mt-14">
@@ -52,7 +51,7 @@
             </section>
           </div>
 
-          <div class="absolute -bottom-1 -right-[100px]">
+          <div class="absolute -bottom-1 xl:-right-[100px]">
             <img draggable="false" class=" w-[1100px] h-auto" src="~/assets/img/main-model.svg">
           </div>
         </div>
@@ -60,20 +59,22 @@
 
     </div>
 
-    <div class="h-full w-full pt-20 px-52 border-b border-gray-300 relative">
-      <h1 class="text-center text-3xl font-black">Setup <span class="text-sky-400">Smart & Bulk SMS</span>
+    <div class="h-full w-full pt-20 xl:px-52 px-5 border-b border-gray-300 relative">
+      <h1 class="text-center xl:text-3xl text-2xl font-black">Setup <span class="text-sky-400">Smart & Bulk SMS</span>
         <br>
         For Your Brand In Minutes
       </h1>
-      <p class="text-center mt-5 text-gray-400 text-lg">Setup automated text messaging throughout your business
-        operations in just a few <br>
+      <p class="text-center mt-5 text-gray-400 xl:text-lg text-base">Setup automated text messaging throughout your
+        business
+        operations in just a few <br class="hidden xl:block">
         minutes, and scale without worrying about upgrades and extra costs!
       </p>
 
       <div class="relative">
         <img draggable="false" class="absolute w-auto h-auto -left-[50%] z-10" src="~/assets/img/blue-circle.svg">
-        <div class="pt-20 flex xl:flex-row flex-col items-center w-full gap-x-12 gap-y-24 h-full relative z-20">
-          <section class="w-1/2 xl:w-full space-y-5 h-auto">
+        <div
+          class="xl:pt-20 pt-14 flex xl:flex-row flex-col items-center w-full gap-x-12 gap-y-24 h-full relative z-20">
+          <section class="w-3/4 xl:w-full space-y-5 h-auto">
             <h1 class="font-extrabold text-sm"><span class="text-sky-500">#1:</span> Install App</h1>
             <div class="p-5 rounded-xl bg-[#fcfcfc text-gray-500 shadow-md relative">
               <p class="text-sm">Scan a QR code and <br> instantly install the <br> mobile app on your <br> android
@@ -84,7 +85,7 @@
                 src="~/assets/img/d-r-arrow.png">
             </div>
           </section>
-          <section class="w-1/2 xl:w-full space-y-5">
+          <section class="w-3/4 xl:w-full space-y-5">
             <h1 class="font-extrabold text-sm"><span class="text-sky-500">#2:</span> Import Contacts</h1>
             <div class="px-5 rounded-xl bg-[#fcfcfc] text-gray-500 shadow-md relative pt-5 pb-10">
               <p class="text-sm">Upload any csv file with your <br> contacts and <br> you're all set!</p>
@@ -94,7 +95,7 @@
                 src="~/assets/img/d-r-arrow.png">
             </div>
           </section>
-          <section class="w-1/2 xl:w-full space-y-5 h-auto">
+          <section class="w-3/4 xl:w-full space-y-5 h-auto">
             <h1 class="font-extrabold text-sm"><span class="text-sky-500">#3:</span> Schedule SMS</h1>
             <div class="p-5 rounded-xl bg-[#fcfcfc] text-gray-500 shadow-md relative">
               <p class="text-sm">Formulate your message, <br> choose a contacts <br> group, and schedule <br> your
@@ -105,16 +106,17 @@
           </section>
         </div>
         <div class="xl:grid xl:grid-cols-2 flex flex-col-reverse mt-32 h-full gap-10">
-          <img draggable="false" class="w-[500px] h-auto z-30" src="~/assets/img/creative-women.png" />
+          <img draggable="false" class="xl:w-[500px] w-[300px] h-auto z-30 xl:mx-0 mx-auto"
+            src="~/assets/img/creative-women.png" />
 
-          <div class="my-auto space-y-5">
-            <div class="text-3xl font-black">
-              <span>Let Your Mobile Carrier Do All</span> <br>
+          <div class="xl:my-auto space-y-5 flex flex-col items-center justify-center">
+            <div class="xl:text-3xl text-2xl font-black xl:text-start text-center">
+              <span>Let Your Mobile Carrier Do All</span> <br class="hidden xl:block">
               <span>The Heavy Lifting,</span> <br>
               <span class="text-sky-400">While We Take Care Of The Rest.</span>
             </div>
 
-            <p class="text-lg text-gray-400">
+            <p class="xl:text-lg text-base text-gray-400 text-center">
               You're already paying for an unlimited data plan, <br>
               but with Massms, you'll actually be using it.
             </p>
@@ -144,33 +146,34 @@
       </div>
     </div>
 
-    <div class="xl:h-screen h-full w-full">
+    <div class="xl:h-screen h-full w-full px-5">
       <div class="w-full h-[70%] relative flex items-center justify-center">
         <div class="z-50 flex items-center justify-center flex-col gap-5 text-center pt-20">
-          <img class="w-40 h-auto" src="~/assets/img/robust-robot-icon.svg" />
-          <p class="text-3xl font-black">Robust, Comprehensive, <br>
+          <img class="xl:w-40 w-28 h-auto" src="~/assets/img/robust-robot-icon.svg" />
+          <p class="xl:text-3xl text-2xl font-black">Robust, Comprehensive, <br>
             <span class="text-sky-400">Fully-Documented</span> API
           </p>
-          <div>
-            <p class="text-xl text-sky-400">Seamlessly connect your CRM, ERPs, marketing platforms, <br>
+          <div class="xl:text-xl text-base xl:space-y-0 space-y-2">
+            <p class=" text-sky-400">Seamlessly connect your CRM, ERPs, marketing platforms, <br
+                class="hidden xl:block">
               and most popular business management and marketing systems.</p>
-            <p class="text-xl text-gray-400">(Our extensive API was designed with simplicity in mind, while encompassing
-              <br>
+            <p class="text-gray-400">(Our extensive API was designed with simplicity in mind, while encompassing
+              <br class="hidden xl:block">
               enough features to allow for usage versatility from a variety of users.)
             </p>
           </div>
         </div>
         <img class="absolute top-14 z-10" src="~/assets/img/blue-circle.svg">
-        <img class="h-auto w-[150px] absolute right-0 top-0 z-20" src="~/assets/img/decor-right.png">
-        <img class="h-auto w-[200px] absolute left-0 bottom-0 z-20" src="~/assets/img/decor-left.png">
+        <img class="h-auto xl:w-[150px] w-[70px] absolute right-0 top-0 z-20" src="~/assets/img/decor-right.png">
+        <img class="h-auto xl:w-[200px] w-[90px] absolute left-0 xl:bottom-0 top-0 z-20" src="~/assets/img/decor-left.png">
       </div>
 
-      <!-- display all the starItems -->
-      <div class="w-full h-[30%] relative z-50 xl:px-52 px-0 xl:py-0 py-10 xl:grid xl:grid-cols-3 flex flex-col items-center">
+      <div
+        class="w-full h-[30%] relative z-50 xl:px-52 px-0 xl:py-0 py-10 xl:grid xl:grid-cols-3 flex flex-col items-center">
         <section v-for="(items, rowIndex) in starItems" :key="rowIndex">
           <div v-for="(item, itemIndex) in items" :key="itemIndex" class="flex gap-3 space-y-2">
             <img class="h-auto w-5" src="~/assets/img/star.svg" alt="Star Icon">
-            <p class="text-lg text-gray-400">{{ item }}</p>
+            <p class="xl:text-lg text-base text-gray-400">{{ item }}</p>
           </div>
         </section>
       </div>
