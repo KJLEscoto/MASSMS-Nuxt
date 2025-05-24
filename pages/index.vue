@@ -6,7 +6,8 @@
       <nav class="flex justify-between items-center">
         <img draggable="false" class="xl:w-36 w-24 h-auto" src="~/assets/img/masmss.svg">
 
-        <img class="w-[50px] h-auto xl:hidden block mt-5 opacity-70 hover:opacity-100 cursor-pointer trans" src="~/assets/img/menu.jpg" />
+        <img class="w-[50px] h-auto xl:hidden block mt-5 opacity-70 hover:opacity-100 cursor-pointer trans"
+          src="~/assets/img/menu.jpg" />
 
         <ul class="hidden xl:flex gap-10 text-gray-400 mt-5 *:cursor-pointer">
           <li class="text-yellow-300">Home</li>
@@ -26,7 +27,7 @@
       </nav>
 
       <section class="grid xl:grid-cols-2 grid-cols-1 xl:mt-36 mt-20 w-full">
-        <div class="flex flex-col w-full justify-center items-center text-center">
+        <div class="flex flex-col w-full justify-start xl:items-start items-center xl:text-start text-center">
           <h1 class="xl:text-7xl text-5xl font-black text-white">Unlimited <br> Bulk SMS</h1>
           <p class="xl:text-lg text-base text-white xl:ml-1 mt-3">Massms is a fully-featured SMS & mobile marketing
             platform that
@@ -52,7 +53,7 @@
           </div>
 
           <div class="absolute -bottom-1 xl:-right-[100px]">
-            <img draggable="false" class=" w-[1100px] h-auto" src="~/assets/img/main-model.svg">
+            <img draggable="false" class=" xl:w-[1100px] w-[800px] h-auto" src="~/assets/img/main-model.svg">
           </div>
         </div>
       </section>
@@ -165,7 +166,8 @@
         </div>
         <img class="absolute top-14 z-10" src="~/assets/img/blue-circle.svg">
         <img class="h-auto xl:w-[150px] w-[70px] absolute right-0 top-0 z-20" src="~/assets/img/decor-right.png">
-        <img class="h-auto xl:w-[200px] w-[90px] absolute left-0 xl:bottom-0 top-0 z-20" src="~/assets/img/decor-left.png">
+        <img class="h-auto xl:w-[200px] w-[90px] absolute left-0 xl:bottom-0 top-0 z-20"
+          src="~/assets/img/decor-left.png">
       </div>
 
       <div
@@ -184,7 +186,7 @@
 <script setup>
 
 const starItems = [
-  [     
+  [
     'OTP authentication',
     'Cart abandonment funnels',
     'eCommerce autoresponders',
@@ -198,6 +200,6 @@ const starItems = [
     'Sync contacts from your CRM',
     'Create complex chat bots',
     'And more... !'
-  ] 
+  ]
 ]
 </script>
